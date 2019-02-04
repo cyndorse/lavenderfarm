@@ -1,0 +1,183 @@
+@charset "utf-8";
+@font-face{
+   font-family: 'Poppins', sans-serif;
+    font-family: 'Playball', cursive;
+}
+/*
+   IT3212
+   Intro to Web Development
+   Unit 2 Assignment 1
+   
+   Externally Linked CSS and Site Navigation Style Sheet
+   Author: Cynthia Dorsey
+   Date: January 20, 2019   
+   
+   Filename: cw_styles.css
+
+Colors Pallet 
+DK Lilac (66, 69 ,106)
+Blush (208, 174, 157)
+DK Red(95, 27, 37)
+LtGreen(133, 149, 123)
+Pink(220, 140, 137)
+*/
+
+* {
+  box-sizing: border-box;
+}
+/*Style the navigation menu */
+
+body{
+    
+    font-family: 'Poppins', sans-serif;
+    padding:10px;
+   
+}
+
+/*Header Title*/
+.logo{
+    display:block;
+    float:left;
+    padding-right:10px;
+    padding-bottom: 20px;
+    
+      
+}
+
+h1{
+    display:inline-block;
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Playball', cursive;
+    color: rgb(66, 69 ,106);
+}
+h2{
+    padding-top:10px;
+    font-family:'Playball', cursive;
+    
+}
+/*Navigation*/
+
+.nav{
+    font-size: 14px;
+    text-align:right;
+    
+    list-style: none;
+}
+
+.nav li{
+    float: right;
+    text-align:center;
+    padding: 14px 16px;
+    background-color: rgb(133, 149, 123);
+    
+}
+
+/*change color on hover */
+.nav li a:hover{
+  background-color:gray;
+    color:white;
+}   
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+}
+/*Images for home page*/
+.vel{
+    background-color: antiquewhite;
+    padding: 20px; 
+}
+.mum{
+    background-color: antiquewhite;
+    padding: 20px; 
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+article p{
+   font-family: 'Poppins', sans-serif; 
+    font-weight: 500;
+    font-size: 20px;
+}
+/*h2 Head styles */
+h2{
+    padding-top:20px;
+    font-family: 'Playball', cursive;
+    color: rgb(133, 149, 123);
+    font-size: 30px;
+    text-align:center;       
+}
+
+/*h3 Head styles */
+h3{
+    font-family: 'Poppins', sans-serif;;
+    color: rgb(95, 27, 37);
+    font-size: 20px;
+    text-align: left;
+    
+}
+h4{
+   font-family: 'Poppins', sans-serif;;
+    color:  rgb(133, 149, 123);
+    font-size: 20px;
+    text-align: center; 
+}
+/*About Us Page Table for Days of week and hours*/ 
+table.hours{
+    font-size: 20px;
+    width: 100%;
+    padding: 15px;
+}
+
+/*Table hours*/
+table.hours th {
+    text-align:center;
+}
+
+/*Table data*/
+table.hours td{
+    text-align:center;
+    }
+    
+/*Table column*/
+    
+.concolumn{
+    float:left;
+    width: 50%;
+    
+    
+    
+}
+   
+/*Row */ 
+    
+.conrow:{
+
+    content: "";
+    display: table;
+    clear: both;
+
+
+
+}
+/*Style the footer */
+      
+footer{
+    background-color: rgb(133, 149, 123);
+    padding-top: 10px;
+    text-align: center;
+    color:white;
+}
+
